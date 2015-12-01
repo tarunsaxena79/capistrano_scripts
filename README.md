@@ -223,7 +223,7 @@
 </p>
 <div>
     <strong>Note :- </strong>
-    Please note the "#######" pattern in all the configuration files, all the scripts use this pattern to insert remote IPs in the configuration files.Without
+    Please note the "#######" pattern in all the configuration files(staging.rb/production.rb), all the scripts use this pattern to insert remote IPs in the configuration files.Without
     this the scripts wont' work.
 </div>
 <div>
