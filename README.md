@@ -1,7 +1,7 @@
 # capistrano_scripts
 Scripts for automating the deployment in autoscaling environment using Capistrano
 
-1.capistrano_deployment_all.sh :- 
+<b>1.capistrano_deployment_all.sh</b> :- 
 Bash script is designed to automate the deployment on all the servers simultaneously under Elastic Load Balancer in Autoscaling at a given point of time. Script will first get the IPs of all the running instances under autoscaling, and pass those IPs to Capistrano by editing its deploy.rb file.Moreover, the script will ensure that any new server is not being launched or getting shut down during the deployment. After the successful deployment, the script will send the Deployment status mail with the deployed git commit ID to the concerned person.In case of failed deployments the script, will rollback the code to the previous git commit ID.The script will store the current git commit ID in a text file named CURRENT_REVISION which is kept in the home directory of the <user> user and preserve the previous commit ID in the file named PREVIOUS_REVISION.
 
 Pre-requisites :-
