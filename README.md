@@ -175,15 +175,18 @@
     Pre-requisites :-
 </div>
 <div>
-    As each server will be logging into the master Capistrano for reading the file CURRENT_REVISION, so the &lt;user&gt; user on the application node must be
-    able to login into Capistrano node by key-based authentication.For this, add application’s node’s &lt;user&gt; user’s public key in authorised keys of
+    As each server will be logging into the master Capistrano for reading the file CURRENT_REVISION, so the &lt;user&gt; user on the application node must be able to login into Capistrano node by key-based authentication.For this, add application’s node’s &lt;user&gt; user’s public key in authorised keys of
     Capistrano server’s &lt;user&gt; user.
 </div>
 <div>
+<ul>
+<li>
     CURRENT_REVISION file in home directory of &lt;user&gt; user(/home/&lt;user&gt;/CURRENT_REVISION)
-</div>
-<div>
+</li>
+<li>
     PREVIOUS_REVISION file in home directory of &lt;user&gt; user (/home/&lt;user&gt;/PREVIOUS_REVISION)
+</li>
+</ul>
 </div>
 <div>
     <br/>
