@@ -132,9 +132,20 @@ Capistrano's configuration files' templates :-
 
 **Note** :- Please note the "#######" pattern in all the configuration files(staging.rb/production.rb), all the scripts use this pattern to insert remote IPs in the configuration files.Without this the scripts wont' work.
 
+# Areas of Improvment
+  
+- This code is very old (almost 6 years back) when AWS servivces were not having robust feature like today. We can use tools like a packer to pre-bake AMIs before shipping in autoscaling or use s3.
+- IPs of dynamic EC2 instances (coming up and going down)can be handled in better way.
+- Bash Scripts need lot of improvements and optimizations (Managing variables etc, functionising the existing code instead of multiple scripts)
+- CICD Tool/Jenkins can be used to kick-off automated build and deployments
+- Monitoring and dashboarding of the deployed stack using TICK stack
+  
+  
 # How to Contribute
 
 - Fork the repository
 - Submit a pull request to master branch of this repository
 - Reach out to tarunsaxena79@gmail.com 
+  
+  
 
