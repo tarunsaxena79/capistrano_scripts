@@ -1,3 +1,9 @@
+# Introduction
+
+Simple capistrano deployment scripts to automate autoscaling servers deployment of PHP Stack. Read below blog for detailed usecase:
+
+Blog Link - https://www.tothenew.com/blog/automating-deployment-using-capistrano-in-aws-auto-scaling/
+
 # Capistrano_scripts
 
 Scripts for automating the deployment in autoscaling environment using Capistrano.
