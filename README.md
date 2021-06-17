@@ -7,7 +7,7 @@ Simple capistrano deployment scripts to automate autoscaling servers deployment 
 ## Use case
 I have to deploy the code on multiple servers under AWS auto-scaling keeping in mind that no server comes up or goes down during deployment. The next task is to achieve the code integrity on all the servers at a time. All the servers must be running the same code from git repository.
 
-`Note: Before moving to the solution, please ensure that:
+`Note: Before moving to the solution, please ensure that:`
 
 - You have already setup Capistrano on a server which can login into an application node via key-based authentication and is able to deploy the code on it.
 - You’ve used the files “deploy.rb” (if single environment) or staging.rb and production.rb (If multiple environments) to insert the remote IP of the application nodes.  
